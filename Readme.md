@@ -8,6 +8,8 @@
 > **以下快捷方式是使用 Sonoma 14.5 導出的，供參考。**
 - [Extract text from a custom area using macOS screenshot tool and paste immediately, support up to Sonoma 14.4.2 by the time of testing](shortcuts/Extract-text-from-selected-area-of-a-screenshot.shortcut)
 - [Extract text from a custom area using macOS screenshot tool and paste immediately, shell version, support Sonoma 14.5](shortcuts/Extract-text-from-selected-area-of-a-screenshot-using-shell.shortcut)
+關於如何設置上述 Shortcuts 的詳細教學，可參考這條影片
+[如何在 macOS 上使用AI工具快速將圖像轉換為文字？ | 神級秘技！圖片秒速轉文字，一截即paste！｜西門 正 Code Guy (JingCodeGuy)](https://www.youtube.com/watch?v=fxPi_SLM6b0&t=1s&ab_channel=%E8%A5%BF%E9%96%80%E6%AD%A3CodeGuy%28JingCodeGuy%29)
 
 
 # Terminal
