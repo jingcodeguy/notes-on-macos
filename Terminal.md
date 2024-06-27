@@ -80,3 +80,17 @@ plutil -convert binary1 XXXXXX.plist
 # get the menu of plutil
 man plutil
 ```
+
+# Conda
+#### 建立虛擬環境的方法
+#### Add an environemnt
+```
+# 使用時，請更改所需的環境名稱和 python 版本
+conda create -n ENVIRONMENT_NAME python=3.8.5
+```
+
+#### 移除虛擬環境的方法
+#### Remove an environment
+```bash
+conda remove --name ENV_NAME --all
+```
