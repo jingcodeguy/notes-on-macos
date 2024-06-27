@@ -58,7 +58,13 @@ toc2cue /Volumes/Ram/VIRIYACDa.toc /Volumes/Ram/VIRIYACDa.cue
 ### Software that can create image from disc supporting DVD
 [Burn](https://burn-osx.sourceforge.io/Pages/English/home.html)
 
+# 關於截圖
+MacOS 預設截圖是 png 格式，好處是畫面質量高，但比較佔用空間。如果想改成 jpeg 格式，可以在終端機 (Terminal) 下輸入：
 
+```
+defaults write com.apple.screencapture type jpg
+```
+如果想改回來，只要把 jpg 改成 png 就可以了。
 
 # 與設定相關的用法
 # Settings Related
