@@ -97,6 +97,11 @@ sudo lsof -i -P | grep LISTEN | grep :5000
 ControlCe  658       someone   10u  IPv4 0xXXXXXXXXde34f2b      0t0    TCP \***:5000** (**LISTEN**)
 ControlCe  658       someone   11u  IPv6 0xXXXXXXXX522241c      0t0    TCP \***:5000** (**LISTEN**)
 ```
+
+# Conda
+#### 建立虛擬 Python 環境的方法
+#### Add a virtual python environemnt
+```bash
 # 使用時，請更改所需的環境名稱和 python 版本
 conda create -n ENVIRONMENT_NAME python=3.8.5
 ```
@@ -105,4 +110,10 @@ conda create -n ENVIRONMENT_NAME python=3.8.5
 #### Remove an environment
 ```bash
 conda remove --name ENV_NAME --all
+```
+
+#### 將當前 Python 環境的情式包寫入 requirements.txt 的方法
+#### How to create the requirements.txt from the current python environment
+```bash
+pip freeze > requirements.txt
 ```
