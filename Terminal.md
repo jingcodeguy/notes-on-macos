@@ -117,3 +117,33 @@ conda remove --name ENV_NAME --all
 ```bash
 pip freeze > requirements.txt
 ```
+
+# Homebrew
+#### Homebrew related
+#### Homebrew 相關
+
+[Excerpt from reference List of all packages installed using Homebrew - Ask Different](https://apple.stackexchange.com/questions/101090/list-of-all-packages-installed-using-homebrew)
+
+**List all installed brew**
+```bash
+# list installed brew and cask
+brew list 
+brew list --cask
+```
+
+`brew leaves` shows you all top-level packages; packages that are not dependencies. This should be the most interesting if you are using the list to re-install packages.
+
+**To include `formula` descriptions, use**
+
+```bash
+brew leaves | xargs brew desc --eval-all
+```
+
+To include `cask` descriptions, use
+
+```bash
+brew ls --casks | xargs brew desc --eval-all
+```
+
+**Reference:**
+[Homebrew cask official usage docs](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
