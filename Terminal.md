@@ -66,11 +66,11 @@ defaults write com.apple.screencapture type jpg
 ```
 如果想改回來，只要把 jpg 改成 png 就可以了。
 
-# 與設定相關的用法
-# Settings Related
+# 與系統設定相關的用法
+# System Settings Related
 #### 如何在二進制和XML文本格式之間轉換macOS plist設置文件
 #### How to convert macOS plist settings file between binary and xml text format
-```
+```bash
 # convert to plain xml format
 plutil -convert xml1 XXXXXX.plist
 
