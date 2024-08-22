@@ -81,9 +81,21 @@ plutil -convert binary1 XXXXXX.plist
 man plutil
 ```
 
-# Conda
-#### 建立虛擬環境的方法
-#### Add an environemnt
+#### File Operations
+#### 檔案處理
+```
+# Display file type.
+file -I ~/Desktop/something
+
+# Network
+#### 如果連接埠被使了，想知道甚麼在使用的方法
+#### How to check what process is using an exsiting port
+```bash
+sudo lsof -i -P | grep LISTEN | grep :5000
+
+# example@Sonoma 14.6.1
+ControlCe  658       someone   10u  IPv4 0xXXXXXXXXde34f2b      0t0    TCP \***:5000** (**LISTEN**)
+ControlCe  658       someone   11u  IPv6 0xXXXXXXXX522241c      0t0    TCP \***:5000** (**LISTEN**)
 ```
 # 使用時，請更改所需的環境名稱和 python 版本
 conda create -n ENVIRONMENT_NAME python=3.8.5
