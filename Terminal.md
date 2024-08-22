@@ -2,7 +2,7 @@
 # How to create disc image
 ## DVD
 Using terminal command
-```
+```bash
 # start to burn
 
 # to check your dvd drive path
@@ -28,7 +28,7 @@ To obtain bin and cue files like Windows famous tools imgburn does, can use the 
 6. use toc2cue to convert toc to cue (toc2cue included in cdrkit)
 
 #### install CDRDAO  CDRKIT
-```
+```bash
 # install cdrdao to get device(cd drive) bus information
 brew install cdrdao cdrkit
 ```
@@ -38,19 +38,19 @@ brew install cdrdao cdrkit
 drutil status
 ```
 #### use cdrecord to create audio bin file (dump the disc to file)
-```
+```bash
 sudo cdrecord dev=1,0,0 -dao -v -isosize /volumes/ram/XXXXXXX.bin
 ```
 #### use cdrdao scanbus to get the device hardware information
-```
+```bash
 cdrdao scanbus
 ```
 #### use cdrdao to output toc from disc image
-```
+```bash
 cdrdao read-cd --device "IOService:..." --datafile /Volumes/Ram/XXXXXXX.bin /Volumes/Ram/XXXXXXX.toc
 ```
 #### use toc2cue to convert toc to cue 
-```
+```bash
 toc2cue /Volumes/Ram/VIRIYACDa.toc /Volumes/Ram/VIRIYACDa.cue
 ```
 
@@ -61,7 +61,7 @@ toc2cue /Volumes/Ram/VIRIYACDa.toc /Volumes/Ram/VIRIYACDa.cue
 # 關於截圖
 MacOS 預設截圖是 png 格式，好處是畫面質量高，但比較佔用空間。如果想改成 jpeg 格式，可以在終端機 (Terminal) 下輸入：
 
-```
+```bash
 defaults write com.apple.screencapture type jpg
 ```
 如果想改回來，只要把 jpg 改成 png 就可以了。
